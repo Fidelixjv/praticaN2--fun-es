@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    float numero;
+    float *ponteiro_numero;
+
+    printf("Digite um numero real: ");
+    scanf("%f", &numero);
+
+    ponteiro_numero = &numero;
+
+    float dobro = *ponteiro_numero * 2;
+
+    printf("Valor original: %.2f\n", *ponteiro_numero);
+    printf("Dobro do valor: %.2f\n", dobro);
+
+    return 0;
+}
