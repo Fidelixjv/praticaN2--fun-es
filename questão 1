@@ -1,0 +1,26 @@
+#include <stdio.h>
+ 
+void ordenar (int *a, int *b, int *c) {
+int temp;
+if( *a > *b){
+temp = *a;
+*a = *b;
+*b = temp;
+};
+if( *b > *c ){
+temp = *b;
+*b = *c;
+*c = temp;
+}
+if( *a > *b){
+temp = *a;
+*a = *b;
+*b = temp;
+}
+}
+int main(){
+int a, b, c;
+scanf ("%d %d %d", &a, &b, &c);
+ordenar ( &a , &b, &c);
+printf ("%d, %d, %d", a, b, c);
+}
