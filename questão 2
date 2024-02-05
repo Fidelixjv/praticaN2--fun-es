@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void){
+
+
+int x,y;
+int *px = &x;
+int *py = &y;
+
+scanf("%d%d", px, py);
+
+*px = *px + *py;
+*py = *px - *py;
+*px = *px - *py;
+
+printf("%d, %d", x, y);
+
+return 0;
+}
