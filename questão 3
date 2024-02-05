@@ -1,0 +1,22 @@
+int main() {
+    int numero1, numero2;
+    int *ponteiro_numero1, *ponteiro_numero2;
+
+    printf("Digite o primeiro numero inteiro: ");
+    scanf("%d", &numero1);
+
+    printf("Digite o segundo numero inteiro: ");
+    scanf("%d", &numero2);
+
+    ponteiro_numero1 = &numero1;
+    ponteiro_numero2 = &numero2;
+
+    *ponteiro_numero1 = *ponteiro_numero1 + *ponteiro_numero2;
+    *ponteiro_numero2 = *ponteiro_numero1 - *ponteiro_numero2;
+    *ponteiro_numero1 = *ponteiro_numero1 - *ponteiro_numero2;
+
+    printf("Valor atualizado do primeiro numero: %d\n", numero1);
+    printf("Valor atualizado do segundo numero: %d\n", numero2);
+
+    return 0;
+}
